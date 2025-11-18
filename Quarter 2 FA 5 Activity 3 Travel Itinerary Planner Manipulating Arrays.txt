@@ -1,29 +1,25 @@
-print("Welcome to your Travel Itinerary Planner!\n")
+print("Welcome to your Travel Itinerary Planner!")
 
-# Step 1: Ask user for 5 destinations
 destinations = []
 
 for i in range(1, 6):
     dest = input(f"Enter destination #{i}: ")
     destinations.append(dest)
 
-# Step 2: Display the initial itinerary
-print("\nYour initial itinerary:")
+print("Your initial itinerary:")
 for i, place in enumerate(destinations, start=1):
     print(f"{i}. {place}")
 
-# Step 3: Ask the user to update the 2nd and 5th destinations
-print("\nLet's update two destinations in your itinerary.")
+print("Let's update your 2nd and 5th destinations in your itinerary.")
 
 new_second = input("Enter a new destination for spot #2: ")
-destinations[1] = new_second  # index 1 is the second item
+destinations[1] = new_second 
 
 new_fifth = input("Enter a new destination for spot #5: ")
-destinations[4] = new_fifth  # index 4 is the fifth item
+destinations[4] = new_fifth  
 
-# Step 4: Display the updated itinerary
-print("\nYour updated itinerary:")
+print("Your updated itinerary:")
 for i, place in enumerate(destinations, start=1):
     print(f"{i}. {place}")
 
-print("\nYour itinerary has been updated successfully!")
+print("Your itinerary has been updated successfully!")
